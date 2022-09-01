@@ -1,24 +1,46 @@
 <template>
-  <div class="handler">
-    <div id="div">
-      <h1>Disshort</h1>
+  <div class="holder">
+    <div class="handler">
+      <div id="div">
+        <h1>Disshort</h1>
+      </div>
+      <Button />
     </div>
-    <Button />
+    <div class="getInformation">
+      <h1>When<br>The Shorter,</h1>
+      <SearchBoxVue />
+      <h1>the better</h1>
+      <button id="conter">Get started</button>
+    </div>
   </div>
 </template>
 
 <script>
 import Button from './components/Button.vue';
+import SearchBoxVue from './components/SearchBox.vue';
 
 export default {
   name: "TheRoot",
   components: {
-    Button
+    Button,
+    SearchBoxVue
   }
 }
 </script>
 
 <style>
+#conter {
+  border: 3px solid rgb(70, 163, 238);
+  background-color: rgb(70, 163, 238);
+  border-radius: 16px;
+  padding: 9px;
+  height: 50px;
+  color: white;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -35,12 +57,18 @@ export default {
   margin: 40px;
 }
 
+.getInformation {
+  font-size: 60px;
+  text-align: left;
+  margin-left: 50px;
+}
+
 #div {
   display: flex;
 }
 
 #div h1 {
-  color: #2c3e50;
+  color: rgb(245, 86, 86);
 }
 
 #img {
