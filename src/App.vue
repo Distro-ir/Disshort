@@ -1,15 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="handler">
+    <div id="div">
+      <h1>Disshort</h1>
+    </div>
+    <Button />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Button from './components/Button.vue';
 
 export default {
-  name: 'App',
+  name: "TheRoot",
   components: {
-    HelloWorld
+    Button
   }
 }
 </script>
@@ -21,6 +25,25 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+.handler {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 40px;
+}
+
+#div {
+  display: flex;
+}
+
+#div h1 {
+  color: #2c3e50;
+}
+
+#img {
+  margin-left: 6px;
 }
 </style>
