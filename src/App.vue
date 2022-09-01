@@ -58,7 +58,7 @@ export default {
 }
 
 .getInformation {
-  font-size: 60px;
+  font-size: 40px;
   text-align: left;
   margin-left: 50px;
 }
